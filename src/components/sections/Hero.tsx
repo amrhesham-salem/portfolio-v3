@@ -16,22 +16,22 @@ export const Hero: React.FC = () => {
       >
         {/* Status Line */}
         <div className="flex items-center justify-center gap-3 mb-6">
-          <span className="text-xs uppercase tracking-widest text-[#8F9B94] font-mono">
+          <span className="text-xs uppercase tracking-widest text-slate-400 font-mono">
             {t('hero.location')}
           </span>
-          <span className="w-1 h-1 rounded-full bg-[#8F9B94]/40" />
-          <span className="text-xs tracking-wide text-[#ECEFE6]/90 font-mono">
+          <span className="w-1 h-1 rounded-full bg-slate-300" />
+          <span className="text-xs tracking-wide text-slate-500 font-mono">
             {t('hero.status')}
           </span>
         </div>
 
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-[#ECEFE6] leading-[1.15] mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-slate-900 leading-[1.15] mb-6">
           {t('hero.title')}
         </h1>
 
         {/* Subtext */}
-        <p className="text-base md:text-lg text-[#8F9B94] leading-relaxed max-w-2xl mx-auto mb-10">
+        <p className="text-base md:text-lg text-slate-500 leading-relaxed max-w-2xl mx-auto mb-10">
           {t('hero.description')}
         </p>
 
@@ -39,22 +39,22 @@ export const Hero: React.FC = () => {
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#ECEFE6] text-[#0C0E0D] text-sm font-medium hover:bg-white transition-all shadow-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition-all shadow-sm"
           >
             <span>{t('hero.viewWork')}</span>
             <ArrowDown size={15} />
           </a>
 
-            <a
+          <a
             href="/Amr-Hesham-Frontend-CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="Amr-Hesham-Frontend-CV.pdf"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/6 text-[#ECEFE6] text-sm font-medium border border-white/10 hover:bg-white/12 transition-all"
-            >
-            <FileText size={15} className="text-[#84A98C]" />
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-slate-800 text-sm font-medium border border-slate-200 hover:bg-slate-50 transition-all"
+          >
+            <FileText size={15} className="text-sky-500" />
             <span>{t('hero.downloadCv')}</span>
-            </a>
+          </a>
         </div>
       </motion.div>
     </section>

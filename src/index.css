@@ -2,25 +2,22 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem; /* مسافة أمان عشان النافبار ميعملش Overlay على العناوين */
+  scroll-padding-top: 6rem;
 }
 
 @layer base {
   :root {
-    --bg-main: #0c0e0d;
-    --bg-surface: #141715;
-    --bg-surface-elevated: #1b1f1c;
-    --accent-sage: #84a98c;
-    --accent-olive: #52796f;
-    --text-primary: #ecefe6;
-    --text-secondary: #8f9b94;
-    --border-subtle: rgba(255, 255, 255, 0.07);
+    --bg-main: #F1F5F9;        /* Warm slate-100 canvas */
+    --bg-card: #FFFFFF;        /* Pure white cards */
+    --text-primary: #0F2952;   /* كحلي / True Navy */
+    --text-muted: #64748B;     /* Slate-500 muted body */
+    --accent-sky: #0EA5E9;     /* Sky-500 accent */
   }
 
   body {
-    background-color: var(--bg-main);
-    color: var(--text-primary);
-    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background-color: #F1F5F9;
+    color: #0F2952;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     overflow-x: hidden;
   }
 }

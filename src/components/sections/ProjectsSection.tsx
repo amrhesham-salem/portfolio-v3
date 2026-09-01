@@ -12,17 +12,17 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectCaseSt
 
   return (
     <section id="projects" className="py-20 px-6 max-w-6xl mx-auto">
-      {/* عنوان القسم */}
-      <div className="flex items-center justify-between mb-12 border-b border-white/10 pb-4">
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#ECEFE6] tracking-tight">
+      {/* Section Header */}
+      <div className="flex items-center justify-between mb-12 border-b border-slate-200 pb-4">
+        <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 tracking-tight">
           {t('projects.sectionTitle')}
         </h2>
-        <span className="text-xs font-mono text-[#8F9B94]">
+        <span className="text-xs font-mono text-slate-400">
           {featuredProjects.length} Selected Works
         </span>
       </div>
 
-      {/* Grid المشاريع */}
+      {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {featuredProjects.map((project) => (
           <ProjectCard
