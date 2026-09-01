@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "milestones": "Milestones",
+    "experience": "Experience",
+    "contact": "Contact",
+    "archive": "Archive"
+  },
+  "hero": {
+    "location": "Based in Egypt",
+    "status": "Open for new opportunities",
+    "title": "Frontend Engineer Crafting Resilient Web Systems",
+    "description": "Specialized in React, TypeScript, and modern UI engineering with a strong focus on clean architecture and high-performance interfaces.",
+    "viewWork": "View Selected Work",
+    "downloadCv": "Get CV"
+  },
+  "projects": {
+    "sectionTitle": "Featured Projects",
+    "readCaseStudy": "Read Case Study",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code",
+    "back": "Back to Projects"
+  }
+}
+

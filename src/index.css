@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem; /* مسافة أمان عشان النافبار ميعملش Overlay على العناوين */
+}
+
+@layer base {
+  :root {
+    --bg-main: #0c0e0d;
+    --bg-surface: #141715;
+    --bg-surface-elevated: #1b1f1c;
+    --accent-sage: #84a98c;
+    --accent-olive: #52796f;
+    --text-primary: #ecefe6;
+    --text-secondary: #8f9b94;
+    --border-subtle: rgba(255, 255, 255, 0.07);
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes marquee-ltr {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-rtl {
+  from { transform: translateX(0); }
+  to { transform: translateX(50%); }
+}
+
+.animate-marquee-ltr {
+  display: flex;
+  width: max-content;
+  animation: marquee-ltr 50s linear infinite;
+}
+
+.animate-marquee-rtl {
+  display: flex;
+  width: max-content;
+  animation: marquee-rtl 50s linear infinite;
+}
+
+.animate-marquee-ltr:hover,
+.animate-marquee-rtl:hover {
+  animation-play-state: paused !important;
+}
