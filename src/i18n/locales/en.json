@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Amr Hesham | Frontend Engineer",
+    "description": "Amr Hesham — Frontend Engineer specialized in React, TypeScript, and modern UI engineering with a strong focus on clean architecture and high-performance interfaces."
+  },
   "nav": {
     "projects": "Projects",
     "milestones": "Milestones",
@@ -16,10 +20,18 @@
   },
   "projects": {
     "sectionTitle": "Featured Projects",
+    "selectedWorks": "Selected Works",
     "readCaseStudy": "Read Case Study",
     "liveDemo": "Live Demo",
     "sourceCode": "Source Code",
     "back": "Back to Projects"
+  },
+  "milestones": {
+    "sectionTitle": "Milestones & Community",
+    "viewPost": "View Post"
+  },
+  "footer": {
+    "title": "Connect & Collaborate",
+    "subtitle": "Available for discussions, engineering roles, or freelance projects."
   }
 }
-

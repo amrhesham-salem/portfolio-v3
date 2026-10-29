@@ -1,75 +1,38 @@
-# React + TypeScript + Vite
+# Amr Hesham — Frontend Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of **Amr Hesham** (`عمرو هشام`), a Frontend Engineer based in Mansoura, Egypt, specializing in **React.js**, **TypeScript**, **Tailwind CSS**, and clean UI architecture.
 
-Currently, two official plugins are available:
+## ✨ Architecture & Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Clean Modular Architecture**:
+  - `src/constants/`: Centralized site configuration, metadata, and social media channels (`site.ts`).
+  - `src/data/`: Decoupled domain datasets (`projects.ts`, `milestones.ts`).
+  - `src/types/`: Strict TypeScript domain interfaces (`project.ts`).
+  - `src/hooks/`: Custom hooks for RTL/LTR directionality (`useDirection.ts`) and dynamic SEO head synchronization (`useSeo.ts`).
+  - `src/components/`: Organized into `common/` (reusable cards & SVG icons), `layout/` (`Navbar`, `Footer`), and `sections/` (`Hero`, `ProjectsSection`, `MilestonesMarquee`, `CaseStudyModal`).
+  - `src/i18n/`: Bilingual English & Arabic (`en` / `ar`) localization.
+- **SEO & Social Readiness**:
+  - Full Open Graph (`og:*`) and Twitter Card metadata.
+  - Rich `Schema.org` JSON-LD Structured Data (`Person`, `WebSite`, `ProfilePage`) linking official accounts across GitHub, LinkedIn, Instagram, TikTok, and Facebook via `sameAs`.
+  - Pre-configured `robots.txt`, `sitemap.xml`, `site.webmanifest`, and custom `favicon.svg`.
 
-## React Compiler
+## 🔗 Official Profiles
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **GitHub**: [github.com/amrhesham-salem](https://github.com/amrhesham-salem)
+- **LinkedIn**: [linkedin.com/in/amr-hesham-10082a276](https://www.linkedin.com/in/amr-hesham-10082a276)
+- **Instagram**: [instagram.com/amrhesham_dev](https://www.instagram.com/amrhesham_dev)
+- **TikTok**: [tiktok.com/@amrhesham_dev](https://www.tiktok.com/@amrhesham_dev)
+- **Facebook**: [facebook.com/amr.hesham.234617](https://www.facebook.com/amr.hesham.234617/)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Install dependencies
+npm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# Run development server
+npm run dev
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+# Build for production
+npm run build
 ```

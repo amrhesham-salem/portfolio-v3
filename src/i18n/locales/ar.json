@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Amr Hesham | مهندس واجهات أمامية",
+    "description": "عمرو هشام (Amr Hesham) — مهندس واجهات أمامية متخصص في بناء تطبيقات ويب متكاملة باستخدام React و TypeScript مع التركيز على المعمارية النظيفة وتجربة المستخدم."
+  },
   "nav": {
     "projects": "المشاريع",
     "milestones": "الإنجازات",
@@ -16,9 +20,18 @@
   },
   "projects": {
     "sectionTitle": "أبرز المشاريع",
+    "selectedWorks": "Selected Works",
     "readCaseStudy": "دراسة المشروع والحل التقني",
     "liveDemo": "معاينة حية",
     "sourceCode": "الكود المصدري",
     "back": "العودة للمشاريع"
+  },
+  "milestones": {
+    "sectionTitle": "محطات ولحظات حية",
+    "viewPost": "عرض المنشور"
+  },
+  "footer": {
+    "title": "تواصل معي",
+    "subtitle": "متاح للمناقشات البرمجية، الفرص الجديدة، أو مشاريع العمل الحر."
   }
 }

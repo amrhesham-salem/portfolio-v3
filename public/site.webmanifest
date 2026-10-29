@@ -1,0 +1,16 @@
+{
+  "name": "Amr Hesham | Frontend Engineer",
+  "short_name": "Amr Hesham",
+  "description": "Amr Hesham \u2014 Frontend Engineer specializing in React, TypeScript, and modern UI engineering with clean architecture.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F1F5F9",
+  "theme_color": "#0F2952",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

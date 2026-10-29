@@ -7,6 +7,6 @@ export const useDirection = () => {
   useEffect(() => {
     const isArabic = i18n.language.startsWith('ar');
     document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
-    document.documentElement.lang = i18n.language;
+    document.documentElement.lang = isArabic ? 'ar' : 'en';
   }, [i18n.language]);
 };
